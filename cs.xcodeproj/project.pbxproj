@@ -56,15 +56,31 @@
 		CFFEEB3526C79E3B00E7C344 /* cs */ = {
 			isa = PBXGroup;
 			children = (
+				CFFEEB4A26C7A01500E7C344 /* App */,
+				CFFEEB4B26C7A02500E7C344 /* Resources */,
+				CFFEEB3A26C79E3B00E7C344 /* ViewController.swift */,
+			);
+			path = cs;
+			sourceTree = "<group>";
+		};
+		CFFEEB4A26C7A01500E7C344 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				CFFEEB3626C79E3B00E7C344 /* AppDelegate.swift */,
 				CFFEEB3826C79E3B00E7C344 /* SceneDelegate.swift */,
-				CFFEEB3A26C79E3B00E7C344 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CFFEEB4B26C7A02500E7C344 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				CFFEEB3C26C79E3B00E7C344 /* Main.storyboard */,
 				CFFEEB3F26C79E3F00E7C344 /* Assets.xcassets */,
 				CFFEEB4126C79E3F00E7C344 /* LaunchScreen.storyboard */,
 				CFFEEB4426C79E3F00E7C344 /* Info.plist */,
 			);
-			path = cs;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q2M3J9J6V;
-				INFOPLIST_FILE = cs/Info.plist;
+				INFOPLIST_FILE = cs/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q2M3J9J6V;
-				INFOPLIST_FILE = cs/Info.plist;
+				INFOPLIST_FILE = cs/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
