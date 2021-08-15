@@ -13,6 +13,11 @@
 		CFFEEB3E26C79E3B00E7C344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFFEEB3C26C79E3B00E7C344 /* Main.storyboard */; };
 		CFFEEB4026C79E3F00E7C344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFFEEB3F26C79E3F00E7C344 /* Assets.xcassets */; };
 		CFFEEB4326C79E3F00E7C344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFFEEB4126C79E3F00E7C344 /* LaunchScreen.storyboard */; };
+		CFFEEB4E26C7AAEE00E7C344 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB4D26C7AAEE00E7C344 /* SendViewController.swift */; };
+		CFFEEB5026C7AB5B00E7C344 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB4F26C7AB5B00E7C344 /* DetailViewController.swift */; };
+		CFFEEB5426C7DC9E00E7C344 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB5326C7DC9E00E7C344 /* NotificationCenterViewController.swift */; };
+		CFFEEB5726C8E7AF00E7C344 /* ChooseFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB5626C8E7AF00E7C344 /* ChooseFruitViewController.swift */; };
+		CFFEEB5926C8E7DD00E7C344 /* FruitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB5826C8E7DD00E7C344 /* FruitListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		CFFEEB3F26C79E3F00E7C344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFFEEB4226C79E3F00E7C344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFFEEB4426C79E3F00E7C344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFFEEB4D26C7AAEE00E7C344 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		CFFEEB4F26C7AB5B00E7C344 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CFFEEB5326C7DC9E00E7C344 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		CFFEEB5626C8E7AF00E7C344 /* ChooseFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFruitViewController.swift; sourceTree = "<group>"; };
+		CFFEEB5826C8E7DD00E7C344 /* FruitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		CFFEEB3526C79E3B00E7C344 /* cs */ = {
 			isa = PBXGroup;
 			children = (
+				CFFEEB4A26C7A01500E7C344 /* App */,
+				CFFEEB3A26C79E3B00E7C344 /* ViewController.swift */,
+				CFFEEB4B26C7A02500E7C344 /* Resources */,
+				CFFEEB4C26C7A59E00E7C344 /* lesson1 */,
+			);
+			path = cs;
+			sourceTree = "<group>";
+		};
+		CFFEEB4A26C7A01500E7C344 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				CFFEEB3626C79E3B00E7C344 /* AppDelegate.swift */,
 				CFFEEB3826C79E3B00E7C344 /* SceneDelegate.swift */,
-				CFFEEB3A26C79E3B00E7C344 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CFFEEB4B26C7A02500E7C344 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				CFFEEB3C26C79E3B00E7C344 /* Main.storyboard */,
 				CFFEEB3F26C79E3F00E7C344 /* Assets.xcassets */,
 				CFFEEB4126C79E3F00E7C344 /* LaunchScreen.storyboard */,
 				CFFEEB4426C79E3F00E7C344 /* Info.plist */,
 			);
-			path = cs;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFFEEB4C26C7A59E00E7C344 /* lesson1 */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB5526C8E4AD00E7C344 /* Delegate */,
+				CFFEEB5226C7DBC900E7C344 /* NotificationCenter */,
+				CFFEEB5126C7DB9E00E7C344 /* Singleton */,
+			);
+			path = lesson1;
+			sourceTree = "<group>";
+		};
+		CFFEEB5126C7DB9E00E7C344 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB4D26C7AAEE00E7C344 /* SendViewController.swift */,
+				CFFEEB4F26C7AB5B00E7C344 /* DetailViewController.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		CFFEEB5226C7DBC900E7C344 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB5326C7DC9E00E7C344 /* NotificationCenterViewController.swift */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		CFFEEB5526C8E4AD00E7C344 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB5626C8E7AF00E7C344 /* ChooseFruitViewController.swift */,
+				CFFEEB5826C8E7DD00E7C344 /* FruitListViewController.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFFEEB5726C8E7AF00E7C344 /* ChooseFruitViewController.swift in Sources */,
+				CFFEEB5426C7DC9E00E7C344 /* NotificationCenterViewController.swift in Sources */,
+				CFFEEB4E26C7AAEE00E7C344 /* SendViewController.swift in Sources */,
 				CFFEEB3B26C79E3B00E7C344 /* ViewController.swift in Sources */,
+				CFFEEB5026C7AB5B00E7C344 /* DetailViewController.swift in Sources */,
+				CFFEEB5926C8E7DD00E7C344 /* FruitListViewController.swift in Sources */,
 				CFFEEB3726C79E3B00E7C344 /* AppDelegate.swift in Sources */,
 				CFFEEB3926C79E3B00E7C344 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q2M3J9J6V;
-				INFOPLIST_FILE = cs/Info.plist;
+				INFOPLIST_FILE = cs/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q2M3J9J6V;
-				INFOPLIST_FILE = cs/Info.plist;
+				INFOPLIST_FILE = cs/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
