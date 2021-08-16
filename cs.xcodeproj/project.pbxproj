@@ -20,6 +20,9 @@
 		CFFEEB5726C8E7AF00E7C344 /* ChooseFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB5626C8E7AF00E7C344 /* ChooseFruitViewController.swift */; };
 		CFFEEB5926C8E7DD00E7C344 /* FruitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB5826C8E7DD00E7C344 /* FruitListViewController.swift */; };
 		CFFEEB5C26C9369400E7C344 /* NetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB5B26C9369400E7C344 /* NetworkingViewController.swift */; };
+		CFFEEB6026C9634D00E7C344 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB5F26C9634D00E7C344 /* Session.swift */; };
+		CFFEEB6526C9670900E7C344 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB6426C9670900E7C344 /* AuthViewController.swift */; };
+		CFFEEB6726C967EF00E7C344 /* DisplayFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB6626C967EF00E7C344 /* DisplayFriendsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		CFFEEB5626C8E7AF00E7C344 /* ChooseFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFruitViewController.swift; sourceTree = "<group>"; };
 		CFFEEB5826C8E7DD00E7C344 /* FruitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListViewController.swift; sourceTree = "<group>"; };
 		CFFEEB5B26C9369400E7C344 /* NetworkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingViewController.swift; sourceTree = "<group>"; };
+		CFFEEB5F26C9634D00E7C344 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		CFFEEB6426C9670900E7C344 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		CFFEEB6626C967EF00E7C344 /* DisplayFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFriendsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +175,43 @@
 		CFFEEB5D26C95D4800E7C344 /* vk-api */ = {
 			isa = PBXGroup;
 			children = (
+				CFFEEB6126C9646800E7C344 /* Modules */,
+				CFFEEB5E26C95F2D00E7C344 /* Service */,
 			);
 			path = "vk-api";
+			sourceTree = "<group>";
+		};
+		CFFEEB5E26C95F2D00E7C344 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB5F26C9634D00E7C344 /* Session.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CFFEEB6126C9646800E7C344 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB6326C9669400E7C344 /* DisplayFriends */,
+				CFFEEB6226C9667300E7C344 /* Auth */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CFFEEB6226C9667300E7C344 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB6426C9670900E7C344 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CFFEEB6326C9669400E7C344 /* DisplayFriends */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB6626C967EF00E7C344 /* DisplayFriendsViewController.swift */,
+			);
+			path = DisplayFriends;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFFEEB6526C9670900E7C344 /* AuthViewController.swift in Sources */,
+				CFFEEB6026C9634D00E7C344 /* Session.swift in Sources */,
 				CFFEEB5726C8E7AF00E7C344 /* ChooseFruitViewController.swift in Sources */,
 				CFFEEB5426C7DC9E00E7C344 /* NotificationCenterViewController.swift in Sources */,
 				CFFEEB5C26C9369400E7C344 /* NetworkingViewController.swift in Sources */,
@@ -294,6 +337,7 @@
 				CFFEEB3B26C79E3B00E7C344 /* ViewController.swift in Sources */,
 				CFFEEB5026C7AB5B00E7C344 /* DetailViewController.swift in Sources */,
 				CFFEEB5926C8E7DD00E7C344 /* FruitListViewController.swift in Sources */,
+				CFFEEB6726C967EF00E7C344 /* DisplayFriendsViewController.swift in Sources */,
 				CFFEEB3726C79E3B00E7C344 /* AppDelegate.swift in Sources */,
 				CFFEEB3926C79E3B00E7C344 /* SceneDelegate.swift in Sources */,
 			);
