@@ -15,22 +15,17 @@ class ChooseFruitViewController: UIViewController, FruitListViewControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     //делегат
-    
     func fruitDidSelect(fruit: String) {
-        //fruitLabel.text = fruit
+        //fruitLabel.text = fruit //при выборе его там, мы отобразим его здесь
     }
-    
-    @IBAction func chooseFruitAction(_ sender: Any) {
+    @IBAction func chooseFruitAction(_ sender: Any) {  //переход вперед
         
         //Второй контроллер
-        
         let fruitList = FruitListViewController()
         fruitList.delegate = self
         
         //кложер
-        
         fruitList.fruitSelect = {[weak self] fruit in
             self?.fruitLabel.text = fruit
         }

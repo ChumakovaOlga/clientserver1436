@@ -12,9 +12,8 @@ protocol FruitListViewControllerDelegate: AnyObject {
 }
 
 class FruitListViewController: UITableViewController {
-    let fruits = ["Авокадо", "Банан", "Яблоко", "Апельсин"]
-    
-   //Делегат
+    let fruits = ["Авокадо", "Банан", "Яблоко", "Апельсин", "Груша", "Слива", "Виноград", "Абрикос", "Персик", "Лимон", "Грейпфрут", "Ананас", "Инжир", "Вишня", "Алыча", "Хурма"]
+   //Делегат слабая ссылка на первый объект
     weak var delegate: FruitListViewControllerDelegate?
     
     //Кложер
@@ -22,7 +21,6 @@ class FruitListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
@@ -37,7 +35,6 @@ class FruitListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let fruit = fruits[indexPath.row]
         delegate?.fruitDidSelect(fruit: fruit)
-        
         fruitSelect?(fruit)
         navigationController?.popViewController(animated: true)
     }
