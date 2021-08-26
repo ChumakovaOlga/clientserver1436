@@ -24,6 +24,10 @@
 		CFFEEB6526C9670900E7C344 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB6426C9670900E7C344 /* AuthViewController.swift */; };
 		CFFEEB6726C967EF00E7C344 /* DisplayFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB6626C967EF00E7C344 /* DisplayFriendsViewController.swift */; };
 		CFFEEB6926CA2CB600E7C344 /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB6826CA2CB600E7C344 /* FriendsAPI.swift */; };
+		CFFEEB8C26CCBCA200E7C344 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB8B26CCBCA200E7C344 /* Data+PrettyJSON.swift */; };
+		CFFEEB9226CCC62700E7C344 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB9126CCC62700E7C344 /* Friend.swift */; };
+		CFFEEB9426CCDBAF00E7C344 /* FriendManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB9326CCDBAF00E7C344 /* FriendManual.swift */; };
+		CFFEEB9626CCE41000E7C344 /* FriendDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEEB9526CCE41000E7C344 /* FriendDynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		CFFEEB6426C9670900E7C344 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		CFFEEB6626C967EF00E7C344 /* DisplayFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFriendsViewController.swift; sourceTree = "<group>"; };
 		CFFEEB6826CA2CB600E7C344 /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
+		CFFEEB8B26CCBCA200E7C344 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
+		CFFEEB9126CCC62700E7C344 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		CFFEEB9326CCDBAF00E7C344 /* FriendManual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendManual.swift; sourceTree = "<group>"; };
+		CFFEEB9526CCE41000E7C344 /* FriendDynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +185,8 @@
 		CFFEEB5D26C95D4800E7C344 /* vk-api */ = {
 			isa = PBXGroup;
 			children = (
+				CFFEEB8E26CCC54400E7C344 /* Models */,
+				CFFEEB8A26CCBBF200E7C344 /* Extensions */,
 				CFFEEB6126C9646800E7C344 /* Modules */,
 				CFFEEB5E26C95F2D00E7C344 /* Service */,
 			);
@@ -215,6 +225,24 @@
 				CFFEEB6626C967EF00E7C344 /* DisplayFriendsViewController.swift */,
 			);
 			path = DisplayFriends;
+			sourceTree = "<group>";
+		};
+		CFFEEB8A26CCBBF200E7C344 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB8B26CCBCA200E7C344 /* Data+PrettyJSON.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFFEEB8E26CCC54400E7C344 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEEB9126CCC62700E7C344 /* Friend.swift */,
+				CFFEEB9326CCDBAF00E7C344 /* FriendManual.swift */,
+				CFFEEB9526CCE41000E7C344 /* FriendDynamic.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +362,8 @@
 				CFFEEB6526C9670900E7C344 /* AuthViewController.swift in Sources */,
 				CFFEEB6026C9634D00E7C344 /* Session.swift in Sources */,
 				CFFEEB5726C8E7AF00E7C344 /* ChooseFruitViewController.swift in Sources */,
+				CFFEEB9426CCDBAF00E7C344 /* FriendManual.swift in Sources */,
+				CFFEEB8C26CCBCA200E7C344 /* Data+PrettyJSON.swift in Sources */,
 				CFFEEB5426C7DC9E00E7C344 /* NotificationCenterViewController.swift in Sources */,
 				CFFEEB5C26C9369400E7C344 /* NetworkingViewController.swift in Sources */,
 				CFFEEB4E26C7AAEE00E7C344 /* SendViewController.swift in Sources */,
@@ -342,6 +372,8 @@
 				CFFEEB5926C8E7DD00E7C344 /* FruitListViewController.swift in Sources */,
 				CFFEEB6726C967EF00E7C344 /* DisplayFriendsViewController.swift in Sources */,
 				CFFEEB3726C79E3B00E7C344 /* AppDelegate.swift in Sources */,
+				CFFEEB9226CCC62700E7C344 /* Friend.swift in Sources */,
+				CFFEEB9626CCE41000E7C344 /* FriendDynamic.swift in Sources */,
 				CFFEEB3926C79E3B00E7C344 /* SceneDelegate.swift in Sources */,
 				CFFEEB6926CA2CB600E7C344 /* FriendsAPI.swift in Sources */,
 			);
